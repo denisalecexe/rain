@@ -1,0 +1,34 @@
+#center {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cirlcle {
+  position: relative;
+  margin: 30px;
+}
+
+.circle::before, .circle::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.circle::before {
+  animation: grow 1.5s linear infinite;
+}
+
+.circle::after {
+  animation: grow 1.5s linear 0.75s infinite;
+}
+
+@keyframes grow {
+  0% {
+    scale: 5;
+  }
+}
