@@ -1,3 +1,7 @@
+body {
+  background: black;
+}
+
 #center {
   margin: 100px;
   display: flex;
@@ -15,7 +19,7 @@
   content: "";
   height: 40px;
   width: 40px;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 50%;
 }
 
